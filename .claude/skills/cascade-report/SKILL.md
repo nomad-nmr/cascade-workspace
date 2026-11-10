@@ -124,7 +124,8 @@ cd <workspace>/cascade_scripts && ./nmr_report.py work/<Project>/<Name>
 
 For each structure it prints the SMILES, the counts, MAE and max |Δ|, then the PDF path. It leaves
 in the folder `<Folder>-report.pdf` and one `<structure>-cascade2.txt` per structure (raw
-predict13c.py output, per-atom and per-environment tables).
+predict13c.py output, per-atom and per-environment tables) plus `<structure>-cascade2.csv` (the
+per-environment table only).
 
 ### 5. Check and summarise
 

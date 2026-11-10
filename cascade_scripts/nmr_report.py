@@ -11,7 +11,7 @@ The folder must contain:
 
 Steps:
   1. Rebuild the molecule from the SVG (atoms, bonds, heteroatom labels, double bonds) -> SMILES.
-  2. Run predict13c.py on that SMILES (output saved as <name>-cascade2.txt in the folder).
+  2. Run predict13c.py on that SMILES (output saved as <name>-cascade2.txt and .csv in the folder).
   3. Match predicted environments to experimental peaks with minimum total |Δ| (Hungarian
      assignment; one-to-one), order by ascending experimental shift, compute the MAE.
   4. Write <name>-report.pdf: structure and table colour-coded by CASCADE confidence,
@@ -32,13 +32,13 @@ import xml.etree.ElementTree as ET
 os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
 sys.dont_write_bytecode = True
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.realpath(__file__))
 _VENV = os.path.join(HERE, ".venv")
 if os.path.realpath(sys.prefix) != os.path.realpath(_VENV):
     _venv_python = os.path.join(_VENV, "bin", "python")
     if not os.path.exists(_venv_python):
         sys.exit(f"Python environment not found: {_venv_python}")
-    os.execv(_venv_python, [_venv_python, os.path.abspath(__file__)] + sys.argv[1:])
+    os.execv(_venv_python, [_venv_python, os.path.realpath(__file__)] + sys.argv[1:])
 
 import numpy as np  # noqa: E402
 

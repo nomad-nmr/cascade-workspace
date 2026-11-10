@@ -47,7 +47,7 @@ Run from `cascade_scripts/`.
 **Predict shifts for one molecule**
 
 ```bash
-./predict13c.py 'CC(C)C1CCC(C)CC1O' menthol.txt
+./predict13c.py 'CC(C)C1CCC(C)CC1O' menthol    # writes menthol.txt (report) and menthol.csv (per-environment table)
 ```
 
 **Report against experimental data.** Make a folder under `work/` containing one or more
