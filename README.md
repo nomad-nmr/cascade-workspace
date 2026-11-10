@@ -88,3 +88,13 @@ Colleagues then run `git submodule update` after pulling.
 
 If you use CASCADE-2.0, cite the work listed in its
 [README](https://github.com/asbhd/CASCADE-2.0#citation).
+
+## License
+
+MIT, see [LICENSE](LICENSE). This covers the code in this repository only.
+
+- `CASCADE-2.0/` (submodule) is a separate project with its own MIT license
+  (Copyright (c) 2025 Abhijeet Bhadauria & Robert Paton / Paton Lab).
+- `cascade_scripts/conformers.py` is a re-implementation of the conformer search from
+  [patonlab/CASCADE](https://github.com/patonlab/CASCADE) (MIT, Copyright (c) 2020 Yanfei Guan &
+  Robert Paton / Paton Lab).
