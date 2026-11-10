@@ -1,0 +1,15 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Local data: experimental inputs (often copyrighted SI PDFs) and generated output
+/cascade_scripts/work/*
+/cascade_scripts/results/*
+!/cascade_scripts/work/.gitkeep
+!/cascade_scripts/results/.gitkeep
+# Worked example used by the skill evals
+!/cascade_scripts/work/Thymol/
+
+# Per-user Claude Code settings
+/.claude/settings.local.json

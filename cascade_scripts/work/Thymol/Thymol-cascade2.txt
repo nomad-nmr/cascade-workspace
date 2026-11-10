@@ -1,0 +1,31 @@
+CASCADE-2.0 13C prediction (Exp22K-FF-GPR, Boltzmann-weighted MMFF ensemble)
+Date: 2026-11-09 17:40:19
+SMILES: Cc1ccc(C(C)C)c(O)c1
+Conformers used: 1
+Atom numbers are 1-based positions in the SMILES.
+
+Per carbon environment (9 expected signals; equivalent carbons averaged,
+diastereotopic carbons kept separate):
+atoms  n_C  shift_ppm  spread_ppm  sigma_ppm confidence
+    1    1      20.88        0.00      0.720       High
+    2    1     136.47        0.00      0.694       High
+    3    1     121.79        0.00      0.690       High
+    4    1     126.42        0.00      0.698       High
+    5    1     131.76        0.00      0.716       High
+    6    1      26.73        0.00      0.775        Low
+  7,8    2      22.76        0.01      0.718       High
+    9    1     152.66        0.00      0.710       High
+   11    1     116.44        0.00      0.700       High
+
+Per carbon atom (10 carbons):
+ atom_index_1  shift_ppm  sigma_ppm confidence
+            1      20.88      0.720       High
+            2     136.47      0.694       High
+            3     121.79      0.690       High
+            4     126.42      0.698       High
+            5     131.76      0.716       High
+            6      26.73      0.775        Low
+            7      22.76      0.718       High
+            8      22.77      0.717       High
+            9     152.66      0.710       High
+           11     116.44      0.700       High

@@ -1,0 +1,17 @@
+{
+  "skill_name": "cascade-report",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Make a CASCADE report for thymol in cascade_scripts/work/Thymol (structure SVG and 13C data are already there).",
+      "expected_output": "Thymol-report.pdf with 9 environments = 9 peaks (green banner), MAE about 0.17 ppm, C8,C9 averaged.",
+      "files": ["cascade_scripts/work/Thymol/Thymol.svg", "cascade_scripts/work/Thymol/Thymol-13C.txt"]
+    },
+    {
+      "id": 2,
+      "prompt": "Compare the 13C data of compound 5 in cascade_scripts/work/NJW-alcohols/SI_Westwood_Green. Chem._2015.pdf with CASCADE predictions and give me the PDF report.",
+      "expected_output": "SMILES for 2,5-bis(3,4-dimethoxyphenyl)-3-(hydroxymethyl)-4H-pyran-4-one (C22H22O7), 20 experimental values extracted across the page break, report with red COUNT MISMATCH banner (22 vs 20), C=O and pyranone outliers discussed.",
+      "files": ["cascade_scripts/work/NJW-alcohols/SI_Westwood_Green. Chem._2015.pdf"]
+    }
+  ]
+}
