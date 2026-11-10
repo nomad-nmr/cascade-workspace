@@ -17,6 +17,10 @@ import datetime
 import os
 import sys
 
+# Never write .pyc files: CASCADE-2.0 tracks its __pycache__ in git, so imports would dirty the submodule.
+os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
+sys.dont_write_bytecode = True
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 # Re-run with the .venv next to this script (so the folder can be renamed or moved).

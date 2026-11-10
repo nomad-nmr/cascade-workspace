@@ -1,3 +1,4 @@
 [submodule "CASCADE-2.0"]
 	path = CASCADE-2.0
 	url = https://github.com/asbhd/CASCADE-2.0.git
+	ignore = dirty

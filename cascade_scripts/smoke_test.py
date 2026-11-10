@@ -18,6 +18,9 @@ import sys
 import time
 import warnings
 
+# Never write .pyc files: CASCADE-2.0 tracks its __pycache__ in git, so imports would dirty the submodule.
+os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
+sys.dont_write_bytecode = True
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "-1")
 os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")
 warnings.filterwarnings("ignore")
